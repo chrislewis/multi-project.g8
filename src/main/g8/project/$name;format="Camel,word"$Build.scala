@@ -38,8 +38,8 @@ object Shared {
   val settings = Seq(
     organization := "$organization$",
     version := "$version$",
-    scalaVersion := "2.9.1",
-    crossScalaVersions := Seq("2.8.1, 2.9.0, 2.9.0-1"),
+    scalaVersion := "2.9.2",
+    crossScalaVersions := Seq("2.8.1", "2.9.0", "2.9.0-1", "2.9.1"),
     resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots",
     initialCommands := "import $organization$.$name;format="normalize,word"$._"
   )
