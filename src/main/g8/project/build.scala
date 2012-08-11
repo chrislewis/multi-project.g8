@@ -4,7 +4,7 @@ import Keys._
 object $name;format="Camel,word"$Build extends sbt.Build {
 
   lazy val root =
-    project(id = "$name;format="normalize"$-all",
+    project(id = "$name;format="normalize"$",
             base = file(".")) aggregate(core)
 
   lazy val core =
