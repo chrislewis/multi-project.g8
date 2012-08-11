@@ -4,11 +4,11 @@ import Keys._
 object $name;format="Camel,word"$Build extends sbt.Build {
 
   lazy val root =
-    project(id = "$name;format="normalize"$",
+    project(id = "$name;format="norm"$",
             base = file(".")) aggregate(core)
 
   lazy val core =
-    project(id = "$name;format="normalize"$-core",
+    project(id = "$name;format="norm"$-core",
             base = file("$name$-core"),
             settings = Seq(
               libraryDependencies <++= scalaVersion (v => Seq(
@@ -41,7 +41,7 @@ object Shared {
     scalaVersion := "2.9.2",
     crossScalaVersions := Seq("2.8.1", "2.9.0", "2.9.0-1", "2.9.1"),
     resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots",
-    initialCommands := "import $organization$.$name;format="normalize,word"$._"
+    initialCommands := "import $organization$.$name;format="norm"$._"
   )
   
 }
